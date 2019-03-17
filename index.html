@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html><head>
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0"><meta charset="utf-8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta charset="utf-8">
   <meta name="generator" content="Google Web Designer 5.0.4.0226">
   <meta name="template" content="Banner 3.0.0">
   <meta name="environment" content="gwd-genericad">
@@ -239,7 +242,11 @@ canvas {
     };
     gwd.auto_Page1_3Event_4 = function(event) {
       // GWD Predefined Function
-      gwd.actions.gwdPagedeck.goToPage('pagedeck', 'page1', 'slide', 1000, 'linear', 'right');
+      gwd.actions.gwdPagedeck.goToPage('pagedeck', 'page1_1', 'slide', 1000, 'linear', 'right');
+    };
+    gwd.auto_Page1_3Event_41 = function(event) {
+      // GWD Predefined Function
+      gwd.actions.gwdPagedeck.goToPage('pagedeck', 'page1_1', 'slide', 1000, 'linear', 'right');
     };
   </script>
   <script type="text/javascript" gwd-events="registration">
@@ -250,6 +257,7 @@ canvas {
       gwd.actions.events.addHandler('page1_1', 'event-2', gwd.auto_Page1_1Event_2, false);
       gwd.actions.events.addHandler('page1_2', 'event-3', gwd.auto_Page1_2Event_3, false);
       gwd.actions.events.addHandler('page1_3', 'event-4', gwd.auto_Page1_3Event_4, false);
+      gwd.actions.events.addHandler('page1_3', 'event-4', gwd.auto_Page1_3Event_41, false);
       gwd.actions.timeline.captureAnimationEnd(document.body);
     };
     gwd.actions.events.deregisterEventHandlers = function(event) {
@@ -257,6 +265,7 @@ canvas {
       gwd.actions.events.removeHandler('page1_1', 'event-2', gwd.auto_Page1_1Event_2, false);
       gwd.actions.events.removeHandler('page1_2', 'event-3', gwd.auto_Page1_2Event_3, false);
       gwd.actions.events.removeHandler('page1_3', 'event-4', gwd.auto_Page1_3Event_4, false);
+      gwd.actions.events.removeHandler('page1_3', 'event-4', gwd.auto_Page1_3Event_41, false);
       gwd.actions.timeline.releaseAnimationEnd(document.body);
     };
     document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
@@ -288,7 +297,8 @@ canvas {
           <gwd-imagebutton id="gwd-imagebutton_2" up-image="https://2.bp.blogspot.com/-7j3Pf92TYL0/XCI4M5tVtCI/AAAAAAAAAhc/f4-_FHt-BJA13XqOuUC0EQKlu9JUNVomQCPcBGAYYCw/s1600/20181225_225856.gif" over-image="" down-image="" scaling="cover" class="gwd-imagebutton-1cvu"></gwd-imagebutton>
           <p class="gwd-p-16ix">헐크 오빠!<br>
             <br>
-            사랑해!</p>
+            사랑해!
+          </p>
           <div class="gwd-animation-event event-3-animation" data-event-name="event-3" data-event-time="5000"></div>
         </div>
       </gwd-page>
@@ -296,7 +306,8 @@ canvas {
         <div class="gwd-page-content gwd-div-ib51">
           <gwd-imagebutton id="gwd-imagebutton_3" up-image="https://3.bp.blogspot.com/-zVujec0gYWQ/XCcsnfbjjUI/AAAAAAAAAkU/clUOId7QC4oXUiV7D_bziWmIRtp5t4sYwCLcBGAs/s1600/tailor.gif" over-image="" down-image="" scaling="cover" class="gwd-imagebutton-1kip"></gwd-imagebutton>
           <p class="gwd-p-32r1">껌 씹는 소리<br>
-            하지마라!</p>
+            하지마라!
+          </p>
           <div class="gwd-animation-event event-4-animation" data-event-name="event-4" data-event-time="5100"></div>
         </div>
       </gwd-page>
